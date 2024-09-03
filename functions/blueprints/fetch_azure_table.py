@@ -9,10 +9,6 @@ import requests
 app_fetch_aztables = func.Blueprint()
 
 
-# Connection string to your Azure Table Storage
-# CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=azstoragepe;AccountKey=dzui99ratHP92V7jXJhVrtTZAcI04BQhCUbZeDNxDIlRQUglFxK05kVuUP6dhQ30nsDUlBnJ3zJ6+ASt9+GCyg==;EndpointSuffix=core.windows.net"
-# TABLE_NAME = "samplefile"
-
 @app_fetch_aztables.route(route="fetch-aztables", methods=["GET"])
 def fetch_aztables(req: HttpRequest) -> HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
